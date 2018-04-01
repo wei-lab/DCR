@@ -17,7 +17,7 @@ For more details on the underlying model please refer to the following paper:
 
     The address of the paper will be updated in a few days
 
-##Requirements
+## Requirements
 The script has been tested running under Python 3.5.2, with the following packages installed (along with their dependencies):
 TensorFlow needs to be installed before running the scripts. TensorFlow v1.4.0 is supported; 
 
