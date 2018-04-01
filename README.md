@@ -4,7 +4,9 @@ This is an implementation of **Brain Tumor Segmention based on Dilated Convoluti
 
 ## Model Description
 The Dilated Convolution Refine Componentsis built on a fully convolutional variant of [ResNet-50](https://github.com/KaimingHe/deep-residual-networks) , the decoder stage  to acquire the output of the same size as the input, deconvolution layers are applied. The Dilated Convolution Refine Components is introduce to increase the sensitivity of the network to detailed information on networks multiple branches. For more details please refer to the following Figure 1:
+
  ![Alt text](https://github.com/wei-lab/DCR/raw/master/image/pipeline.png)
+ 
 
 Fig. 1.	The framework of Brain Tumor Segmentation pipeline
 
@@ -58,7 +60,8 @@ To perform inference over your own MRI, use the following command:
 
 
 # Example of result
-Visual example of our model semantic segmentation results 
+Visual example of our model semantic segmentation results：
+
 ![Alt text](https://github.com/wei-lab/DCR/raw/master/image/example.png)
 
 
