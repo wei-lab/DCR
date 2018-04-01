@@ -29,8 +29,8 @@ TensorFlow needs to be installed before running the scripts. TensorFlow v1.4.0 i
 >   matplotlib>=1.3.1
 
 
-##usage
-####Training
+## usage
+#### Training
 Step1.  Download the data set and put it in the data directory.
 Step2.  Run readfile.py in order to get the training data directory.
 
@@ -44,7 +44,7 @@ Step4.   Training model（Recommend Training on the GPU）:
 ```
 python Train.py 
 ```
-####Inference
+#### Inference
 Step1.   Run   create_pascal_tf_record.py  to generate test tfrecord data file(modify the data path):
 
 ```
@@ -56,12 +56,12 @@ To perform inference over your own MRI, use the following command:
     python Inference.py
 
 
-#Example of result
+# Example of result
 Visual example of our model semantic segmentation results 
 ![Alt text](https://github.com/wei-lab/DCR/raw/master/image/example.png)
 
 
-#License
+# License
 
 > School of Software Yunnan University
 
