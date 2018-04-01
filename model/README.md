@@ -14,7 +14,7 @@ On the test set of  BRATS2015, the model achieves tumor segmentation results wit
 
 For more details on the underlying model please refer to the following paper:
 
-    The address of the paper will be updated in a few days
+    The address of the paper will be updated a period of time 
 
 ## Requirements
 The script has been tested running under Python 3.5.2, with the following packages installed (along with their dependencies):
