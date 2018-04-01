@@ -54,7 +54,7 @@ Step1.   Run   create_pascal_tf_record.py  to generate test tfrecord data file(m
 python create_pascal_tf_record.py
 ```
 
-To perform inference over your own MRI, use the following command:
+Step2. To perform inference over your own MRI, use the following command:
 
     python Inference.py
 
