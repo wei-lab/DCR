@@ -35,6 +35,7 @@ TensorFlow needs to be installed before running the scripts. TensorFlow v1.4.0 i
 ## usage
 #### Training
 Step1.  Download the data set and put it in the data directory.
+
 Step2.  Run readfile.py in order to get the training data directory.
 
     python readfile.py
