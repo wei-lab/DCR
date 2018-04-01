@@ -3,8 +3,10 @@
 This is an implementation of **Brain Tumor Segmention based on Dilated Convolution Refine Networks** in TensorFlow for  on the BRATS2015
 
 ## Model Description
-The Dilated Convolution Refine Componentsis built on a fully convolutional variant of [ResNet-50](https://github.com/KaimingHe/deep-residual-networks) , the decoder stage  to acquire the output of the same size as the input, deconvolution layers are applied. The Dilated Convolution Refine Components is introduce to increase the sensitivity of the network to detailed information on networks multiple branches. For more details please refer to the following Figure 1:
+The Dilated Convolution Refine Components is built on a fully convolutional variant of [ResNet-50](https://github.com/KaimingHe/deep-residual-networks) , the decoder stage  to acquire the output of the same size as the input, deconvolution layers are applied. The Dilated Convolution Refine Components is introduce to increase the sensitivity of the network to detailed information on networks multiple branches. For more details please refer to the following Figure 1:
+
  ![Alt text](https://github.com/wei-lab/DCR/raw/master/image/pipeline.png)
+ 
 Fig. 1.	The framework of Brain Tumor Segmentation pipeline
 
 The model is trained on a mini-batch of MRI images and corresponding ground truth masks with the softmax classifier  at the top, the Cross entropy  and L2 are training loss, during inference, the softmax layers is discard, The final segmentation mask is computed using argmax over the logits.
@@ -14,7 +16,7 @@ For more details on the underlying model please refer to the following paper:
 
     The address of the paper will be updated in a few days
 
-##Requirements
+## Requirements
 The script has been tested running under Python 3.5.2, with the following packages installed (along with their dependencies):
 TensorFlow needs to be installed before running the scripts. TensorFlow v1.4.0 is supported; 
 
@@ -29,9 +31,10 @@ TensorFlow needs to be installed before running the scripts. TensorFlow v1.4.0 i
 >   matplotlib>=1.3.1
 
 
-## usage
+## Usage
 #### Training
 Step1.  Download the data set and put it in the data directory.
+
 Step2.  Run readfile.py in order to get the training data directory.
 
     python readfile.py
@@ -58,6 +61,7 @@ To perform inference over your own MRI, use the following command:
 
 # Example of result
 Visual example of our model semantic segmentation results 
+
 ![Alt text](https://github.com/wei-lab/DCR/raw/master/image/example.png)
 
 
